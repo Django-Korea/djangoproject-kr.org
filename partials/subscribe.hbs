@@ -1,0 +1,10 @@
+{{#if @site.members_enabled}}
+  <div class="subscribe-form">
+    <h3>Subscribe to {{@site.title}}</h3>
+    <p>Get the latest posts delivered right to your inbox.</p>
+    <form data-members-form="subscribe">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+{{/if}}

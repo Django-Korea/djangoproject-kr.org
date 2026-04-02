@@ -1,0 +1,23 @@
+<article class="post-card">
+  {{#if primary_tag}}
+    <span class="post-card-tag">{{primary_tag.name}}</span>
+  {{/if}}
+  <h2 class="post-card-title">
+    <a href="{{url}}">{{title}}</a>
+  </h2>
+  {{#if custom_excerpt}}
+    <p class="post-card-excerpt">{{custom_excerpt}}</p>
+  {{else}}
+    <p class="post-card-excerpt">{{excerpt words="30"}}</p>
+  {{/if}}
+  <div class="post-card-meta">
+    <div class="post-card-author">
+      {{#if primary_author.profile_image}}
+        <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}">
+      {{/if}}
+      <span>{{primary_author.name}}</span>
+    </div>
+    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY.MM.DD"}}</time>
+    <span>{{reading_time}}</span>
+  </div>
+</article>

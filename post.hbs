@@ -1,0 +1,26 @@
+{{!< default}}
+
+<article>
+  <div class="post-header">
+    {{#if primary_tag}}
+      <span class="post-card-tag">{{primary_tag.name}}</span>
+    {{/if}}
+    <h1>{{title}}</h1>
+    <div class="post-meta">
+      <div class="post-card-author">
+        {{#if primary_author.profile_image}}
+          <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" style="width:28px;height:28px;border-radius:50%;">
+        {{/if}}
+        <a href="{{primary_author.url}}">{{primary_author.name}}</a>
+      </div>
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY.MM.DD"}}</time>
+      <span>{{reading_time}}</span>
+    </div>
+  </div>
+
+  <div class="post-content content-area single">
+    {{content}}
+  </div>
+
+  {{> subscribe}}
+</article>

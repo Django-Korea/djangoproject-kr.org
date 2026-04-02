@@ -1,0 +1,15 @@
+{{!< default}}
+
+{{> hero}}
+
+<div class="content-area">
+  <main>
+    {{#foreach posts}}
+      {{> post-card}}
+    {{/foreach}}
+
+    {{> pagination}}
+  </main>
+
+  {{> sidebar}}
+</div>
