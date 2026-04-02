@@ -1,14 +1,17 @@
 /* Django Korea Ghost Theme */
 :root {
-  --django-green-dark: #0C4B33;
-  --django-green: #44B78B;
-  --django-green-light: #E8F5E9;
-  --django-bg: #F9F9F9;
-  --django-text: #333333;
-  --django-text-light: #666666;
-  --django-border: #E0E0E0;
-  --django-white: #FFFFFF;
-  --django-code-bg: #F4F4F4;
+  --dk-red: #D32F2F;
+  --dk-red-dark: #B71C1C;
+  --dk-blue: #1A3A6B;
+  --dk-blue-dark: #0F2647;
+  --dk-green: #2E9E6B;
+  --dk-green-light: #E8F5EE;
+  --dk-bg: #F9F9F9;
+  --dk-text: #333333;
+  --dk-text-light: #666666;
+  --dk-border: #E0E0E0;
+  --dk-white: #FFFFFF;
+  --dk-code-bg: #F4F4F4;
 }
 
 * {
@@ -19,24 +22,24 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: var(--django-text);
-  background: var(--django-bg);
+  color: var(--dk-text);
+  background: var(--dk-bg);
   line-height: 1.6;
 }
 
 a {
-  color: var(--django-green-dark);
+  color: var(--dk-blue-dark);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--django-green);
+  color: var(--dk-green);
 }
 
 /* Header */
 .site-header {
-  background: var(--django-green-dark);
+  background: var(--dk-blue-dark);
   padding: 0;
   position: sticky;
   top: 0;
@@ -58,7 +61,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--django-white);
+  color: var(--dk-white);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -86,16 +89,16 @@ a:hover {
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--django-white);
-  border-bottom-color: var(--django-green);
+  color: var(--dk-white);
+  border-bottom-color: var(--dk-green);
 }
 
 /* Hero */
 .site-hero {
-  background: linear-gradient(135deg, var(--django-green-dark) 0%, #1a6b4a 100%);
+  background: linear-gradient(135deg, var(--dk-blue-dark) 0%, var(--dk-red-dark) 50%, var(--dk-green) 100%);
   padding: 60px 24px;
   text-align: center;
-  color: var(--django-white);
+  color: var(--dk-white);
 }
 
 .site-hero h1 {
@@ -129,8 +132,8 @@ a:hover {
 
 /* Post Cards */
 .post-card {
-  background: var(--django-white);
-  border: 1px solid var(--django-border);
+  background: var(--dk-white);
+  border: 1px solid var(--dk-border);
   border-radius: 8px;
   padding: 28px;
   margin-bottom: 24px;
@@ -139,13 +142,13 @@ a:hover {
 
 .post-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-color: var(--django-green);
+  border-color: var(--dk-green);
 }
 
 .post-card-tag {
   display: inline-block;
-  background: var(--django-green-light);
-  color: var(--django-green-dark);
+  background: #FDE8E8;
+  color: var(--dk-red);
   font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
@@ -160,7 +163,7 @@ a:hover {
   font-weight: 700;
   margin-bottom: 8px;
   line-height: 1.3;
-  color: var(--django-text);
+  color: var(--dk-text);
 }
 
 .post-card-title a {
@@ -168,11 +171,11 @@ a:hover {
 }
 
 .post-card-title a:hover {
-  color: var(--django-green-dark);
+  color: var(--dk-blue-dark);
 }
 
 .post-card-excerpt {
-  color: var(--django-text-light);
+  color: var(--dk-text-light);
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -183,7 +186,7 @@ a:hover {
   align-items: center;
   gap: 16px;
   font-size: 13px;
-  color: var(--django-text-light);
+  color: var(--dk-text-light);
 }
 
 .post-card-author {
@@ -207,8 +210,8 @@ a:hover {
 }
 
 .sidebar-widget {
-  background: var(--django-white);
-  border: 1px solid var(--django-border);
+  background: var(--dk-white);
+  border: 1px solid var(--dk-border);
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 24px;
@@ -219,10 +222,10 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--django-green-dark);
+  color: var(--dk-red);
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--django-green);
+  border-bottom: 2px solid var(--dk-red);
 }
 
 .sidebar-widget ul {
@@ -231,7 +234,7 @@ a:hover {
 
 .sidebar-widget li {
   padding: 8px 0;
-  border-bottom: 1px solid var(--django-border);
+  border-bottom: 1px solid var(--dk-border);
 }
 
 .sidebar-widget li:last-child {
@@ -246,8 +249,8 @@ a:hover {
 .post-header {
   padding: 48px 24px;
   text-align: center;
-  background: var(--django-white);
-  border-bottom: 1px solid var(--django-border);
+  background: var(--dk-white);
+  border-bottom: 1px solid var(--dk-border);
 }
 
 .post-header h1 {
@@ -260,7 +263,7 @@ a:hover {
 
 .post-meta {
   font-size: 14px;
-  color: var(--django-text-light);
+  color: var(--dk-text-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,8 +282,8 @@ a:hover {
   font-size: 28px;
   margin-top: 48px;
   margin-bottom: 16px;
-  color: var(--django-green-dark);
-  border-bottom: 2px solid var(--django-green-light);
+  color: var(--dk-blue-dark);
+  border-bottom: 2px solid var(--dk-green-light);
   padding-bottom: 8px;
 }
 
@@ -295,7 +298,7 @@ a:hover {
 }
 
 .post-content code {
-  background: var(--django-code-bg);
+  background: var(--dk-code-bg);
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 0.9em;
@@ -309,7 +312,7 @@ a:hover {
   border-radius: 8px;
   overflow-x: auto;
   margin-bottom: 24px;
-  border-left: 4px solid var(--django-green);
+  border-left: 4px solid var(--dk-green);
 }
 
 .post-content pre code {
@@ -325,17 +328,17 @@ a:hover {
 }
 
 .post-content blockquote {
-  border-left: 4px solid var(--django-green);
+  border-left: 4px solid var(--dk-green);
   padding-left: 20px;
   margin: 24px 0;
-  color: var(--django-text-light);
+  color: var(--dk-text-light);
   font-style: italic;
 }
 
 /* Tag Page */
 .tag-header {
-  background: var(--django-green-dark);
-  color: var(--django-white);
+  background: linear-gradient(135deg, var(--dk-blue-dark), var(--dk-red-dark));
+  color: var(--dk-white);
   padding: 40px 24px;
   text-align: center;
 }
@@ -346,8 +349,8 @@ a:hover {
 
 /* Author Page */
 .author-header {
-  background: var(--django-white);
-  border-bottom: 1px solid var(--django-border);
+  background: var(--dk-white);
+  border-bottom: 1px solid var(--dk-border);
   padding: 40px 24px;
   text-align: center;
 }
@@ -366,7 +369,7 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  background: var(--django-green-dark);
+  background: var(--dk-blue-dark);
   color: rgba(255,255,255,0.7);
   padding: 40px 24px;
   margin-top: 60px;
@@ -381,7 +384,7 @@ a:hover {
 }
 
 .footer-inner a {
-  color: var(--django-green);
+  color: var(--dk-green);
 }
 
 /* Pagination */
@@ -394,8 +397,8 @@ a:hover {
 }
 
 .pagination a {
-  background: var(--django-green-dark);
-  color: var(--django-white);
+  background: var(--dk-blue-dark);
+  color: var(--dk-white);
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
@@ -404,16 +407,16 @@ a:hover {
 }
 
 .pagination a:hover {
-  background: var(--django-green);
-  color: var(--django-white);
+  background: var(--dk-green);
+  color: var(--dk-white);
 }
 
 /* Subscribe Form */
 .subscribe-form {
-  background: linear-gradient(135deg, var(--django-green-dark), #1a6b4a);
+  background: linear-gradient(135deg, var(--dk-blue-dark), #1a6b4a);
   padding: 48px 24px;
   text-align: center;
-  color: var(--django-white);
+  color: var(--dk-white);
   border-radius: 8px;
   margin: 40px 0;
 }
@@ -444,8 +447,8 @@ a:hover {
 }
 
 .subscribe-form button {
-  background: var(--django-green);
-  color: var(--django-white);
+  background: var(--dk-green);
+  color: var(--dk-white);
   border: none;
   padding: 12px 24px;
   border-radius: 6px;
@@ -456,6 +459,64 @@ a:hover {
 
 .subscribe-form button:hover {
   background: #3aa37a;
+}
+
+/* Ghost Card Width Classes */
+.kg-width-wide {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kg-width-full {
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.kg-width-full img {
+  width: 100%;
+}
+
+/* Ghost Gallery */
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+
+.kg-gallery-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.kg-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ghost Bookmark Card */
+.kg-bookmark-card {
+  border: 1px solid var(--dk-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 24px 0;
+}
+
+.kg-bookmark-content {
+  padding: 20px;
+}
+
+.kg-bookmark-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kg-bookmark-description {
+  font-size: 14px;
+  color: var(--dk-text-light);
 }
 
 /* Responsive */
