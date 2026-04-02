@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <div class="sidebar-widget">
-    <h3>About</h3>
+    <h3>소개</h3>
     <p style="font-size: 14px; line-height: 1.6; color: #666;">
       {{@site.description}}
     </p>
@@ -9,7 +9,7 @@
   {{#get "tags" limit="10" order="count.posts desc"}}
     {{#if tags}}
       <div class="sidebar-widget">
-        <h3>Tags</h3>
+        <h3>태그</h3>
         <ul>
           {{#foreach tags}}
             <li><a href="{{url}}">{{name}} <span style="color: #999;">({{count.posts}})</span></a></li>
@@ -22,7 +22,7 @@
   {{#get "posts" limit="5" order="published_at desc"}}
     {{#if posts}}
       <div class="sidebar-widget">
-        <h3>Recent Posts</h3>
+        <h3>최근 글</h3>
         <ul>
           {{#foreach posts}}
             <li><a href="{{url}}">{{title}}</a></li>

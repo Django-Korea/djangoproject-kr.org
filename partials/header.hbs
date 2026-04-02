@@ -1,10 +1,9 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="{{@site.url}}" class="site-logo">
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="6" fill="#44B78B"/>
-        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Dj</text>
-      </svg>
+      {{#if @site.logo}}
+        <img src="{{@site.logo}}" alt="{{@site.title}}">
+      {{/if}}
       {{@site.title}}
     </a>
     <nav>

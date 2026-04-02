@@ -1,11 +1,8 @@
 /* Django Korea Ghost Theme */
 :root {
-  --dk-red: #D32F2F;
-  --dk-red-dark: #B71C1C;
-  --dk-blue: #1A3A6B;
-  --dk-blue-dark: #0F2647;
-  --dk-green: #2E9E6B;
-  --dk-green-light: #E8F5EE;
+  --dk-primary: #0C4B33;
+  --dk-primary-light: #44B78B;
+  --dk-accent: #E8F5E9;
   --dk-bg: #F9F9F9;
   --dk-text: #333333;
   --dk-text-light: #666666;
@@ -28,18 +25,18 @@ body {
 }
 
 a {
-  color: var(--dk-blue-dark);
+  color: var(--dk-primary);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--dk-green);
+  color: var(--dk-primary-light);
 }
 
 /* Header */
 .site-header {
-  background: var(--dk-blue-dark);
+  background: var(--dk-primary);
   padding: 0;
   position: sticky;
   top: 0;
@@ -67,9 +64,9 @@ a:hover {
   letter-spacing: -0.5px;
 }
 
-.site-logo svg {
-  width: 32px;
-  height: 32px;
+.site-logo img {
+  height: 36px;
+  width: auto;
 }
 
 .site-nav {
@@ -90,12 +87,12 @@ a:hover {
 .site-nav a:hover,
 .site-nav a.active {
   color: var(--dk-white);
-  border-bottom-color: var(--dk-green);
+  border-bottom-color: var(--dk-primary-light);
 }
 
 /* Hero */
 .site-hero {
-  background: linear-gradient(135deg, var(--dk-blue-dark) 0%, var(--dk-red-dark) 50%, var(--dk-green) 100%);
+  background: linear-gradient(135deg, var(--dk-primary) 0%, #1a6b4a 100%);
   padding: 60px 24px;
   text-align: center;
   color: var(--dk-white);
@@ -142,13 +139,13 @@ a:hover {
 
 .post-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-color: var(--dk-green);
+  border-color: var(--dk-primary-light);
 }
 
 .post-card-tag {
   display: inline-block;
-  background: #FDE8E8;
-  color: var(--dk-red);
+  background: var(--dk-accent);
+  color: var(--dk-primary);
   font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
@@ -171,7 +168,7 @@ a:hover {
 }
 
 .post-card-title a:hover {
-  color: var(--dk-blue-dark);
+  color: var(--dk-primary);
 }
 
 .post-card-excerpt {
@@ -222,10 +219,10 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--dk-red);
+  color: var(--dk-primary);
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--dk-red);
+  border-bottom: 2px solid var(--dk-primary);
 }
 
 .sidebar-widget ul {
@@ -282,8 +279,8 @@ a:hover {
   font-size: 28px;
   margin-top: 48px;
   margin-bottom: 16px;
-  color: var(--dk-blue-dark);
-  border-bottom: 2px solid var(--dk-green-light);
+  color: var(--dk-primary);
+  border-bottom: 2px solid var(--dk-accent);
   padding-bottom: 8px;
 }
 
@@ -312,7 +309,7 @@ a:hover {
   border-radius: 8px;
   overflow-x: auto;
   margin-bottom: 24px;
-  border-left: 4px solid var(--dk-green);
+  border-left: 4px solid var(--dk-primary-light);
 }
 
 .post-content pre code {
@@ -328,7 +325,7 @@ a:hover {
 }
 
 .post-content blockquote {
-  border-left: 4px solid var(--dk-green);
+  border-left: 4px solid var(--dk-primary-light);
   padding-left: 20px;
   margin: 24px 0;
   color: var(--dk-text-light);
@@ -337,7 +334,7 @@ a:hover {
 
 /* Tag Page */
 .tag-header {
-  background: linear-gradient(135deg, var(--dk-blue-dark), var(--dk-red-dark));
+  background: linear-gradient(135deg, var(--dk-primary), #1a6b4a);
   color: var(--dk-white);
   padding: 40px 24px;
   text-align: center;
@@ -369,7 +366,7 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  background: var(--dk-blue-dark);
+  background: var(--dk-primary);
   color: rgba(255,255,255,0.7);
   padding: 40px 24px;
   margin-top: 60px;
@@ -384,7 +381,7 @@ a:hover {
 }
 
 .footer-inner a {
-  color: var(--dk-green);
+  color: var(--dk-primary-light);
 }
 
 /* Pagination */
@@ -397,7 +394,7 @@ a:hover {
 }
 
 .pagination a {
-  background: var(--dk-blue-dark);
+  background: var(--dk-primary);
   color: var(--dk-white);
   padding: 10px 20px;
   border-radius: 6px;
@@ -407,13 +404,13 @@ a:hover {
 }
 
 .pagination a:hover {
-  background: var(--dk-green);
+  background: var(--dk-primary-light);
   color: var(--dk-white);
 }
 
 /* Subscribe Form */
 .subscribe-form {
-  background: linear-gradient(135deg, var(--dk-blue-dark), #1a6b4a);
+  background: linear-gradient(135deg, var(--dk-primary), #1a6b4a);
   padding: 48px 24px;
   text-align: center;
   color: var(--dk-white);
@@ -447,7 +444,7 @@ a:hover {
 }
 
 .subscribe-form button {
-  background: var(--dk-green);
+  background: var(--dk-primary-light);
   color: var(--dk-white);
   border: none;
   padding: 12px 24px;

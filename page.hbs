@@ -7,6 +7,11 @@
   </div>
 
   <div class="post-content content-area single">
+    {{#if feature_image}}
+      <figure>
+        <img src="{{feature_image}}" alt="{{title}}">
+      </figure>
+    {{/if}}
     {{content}}
   </div>
 </article>
